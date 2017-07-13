@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 
 /*
- * Name: Harmanpreet Singh
- * Date: July 13, 2017
+ * Name: Tom Tsiliopoulos
+ * Date: July 11, 2017
  * Description: This is the SuperHuman sub class.
  * Version: 0.3 - Added Public AddPower Method
  */
@@ -58,6 +58,14 @@ namespace COMP123_S2017_Lesson9A
         public void AddPower(string name, int rank)
         {
             this.Powers.Add(new Power(name, rank));
+        }
+
+        public void DisplayPowers()
+        {
+            foreach (var power in Powers)
+            {
+                Console.WriteLine("Name: " + power.Name + " Rank: " + power.Rank);
+            }
         }
     }
 }
