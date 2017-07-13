@@ -9,41 +9,48 @@ using System.Threading.Tasks;
  * Date: July 13, 2017
  * Description: This is the abstract class Human which other subclasses will
  * derive from.
- * Version: 0.1 - Class created
+ * Version: 0.2 - Added Public Abstract method DisplaySkills
  */
+
+
 namespace COMP123_S2017_Lesson9A
 {
     /// <summary>
-    /// This is the Abstract Class
+    /// This is the Human Abstract class
     /// </summary>
-    
-        public abstract class Human
+    public abstract class Human
+    {
+        // PRIVATE FIELDS (INSTANCE VARIABLES)
+        private string _name;
+
+        // PUBLIC PROPERTIES -----------------------------------------
+        public string Name
         {
-            // PRIVATE FIELDS (INSTANCE VARIABLES)
-            private string _name;
-
-            // PUBLIC PROPERTIES -----------------------------------------
-            public string Name
+            get
             {
-                get
-                {
-                    return this._name;
-                }
-
-                set
-                {
-                    this._name = value;
-                }
+                return this._name;
             }
-            // CONSTRUCTORS -----------------------------------------------
-            /// <summary>
-            /// This is the constructor for the Human abstract class.
-            /// It requires one parameter - name (string).
-            /// </summary>
-            /// <param name="name"></param>
-            public Human(string name)
+
+            set
             {
-                this.Name = name;
+                this._name = value;
             }
         }
+
+        // CONSTRUCTORS -----------------------------------------------
+
+        /// <summary>
+        /// This is the constructor for the Human abstract class.
+        /// It requires one parameter - name (string).
+        /// </summary>
+        /// <param name="name"></param>
+        public Human(string name)
+        {
+            this.Name = name;
+        }
+
+        // PUBLIC ABSTRACT METHODS
+
+        public abstract void DisplaySkills();
     }
+}
