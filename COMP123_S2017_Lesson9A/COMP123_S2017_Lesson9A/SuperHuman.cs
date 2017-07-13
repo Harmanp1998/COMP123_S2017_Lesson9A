@@ -21,8 +21,15 @@ namespace COMP123_S2017_Lesson9A
         // PRIVATE FIELDS
         private List<Power> _powers;
 
-
         // PUBLIC PROPERTIES
+        public List<Power> Powers
+        {
+            get
+            {
+                return this._powers; // returns a reference to the Powers List
+            }
+        }
+
 
         // CONSTRUCTORS
         public SuperHuman(string name)
@@ -42,5 +49,6 @@ namespace COMP123_S2017_Lesson9A
         }
 
         // PUBLIC METHODS
+
     }
 }
