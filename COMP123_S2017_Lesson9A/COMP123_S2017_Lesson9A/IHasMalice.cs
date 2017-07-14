@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 /*
  * Name: Harmanpreet Singh
  * Date: July 13, 2017
- * Description: This is an Interface that defines a Karam Property that
+ * Description: This is an Interface that defines a Malice Property that
  * must be implemented in any class that subscribes to it.
  * Version: 0.1 - Created IHasMalice interface
  */
